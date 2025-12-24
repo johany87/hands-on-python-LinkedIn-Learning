@@ -21,5 +21,5 @@ with open("laureates.csv", "r") as f:
     laureates = list(reader)
 
 
-with open("laureates.json", "w") as f:
+with open("laureates2.json", "w") as f:
     json.dump(laureates, f, indent=2)
