@@ -19,9 +19,10 @@ with open("laureates.csv", "r") as f:
 
 for laureate in laureates:
     if laureate["surname"] == "Einstein":
-        pprint(laureate)
+        #pprint(laureate)
         print("============")
         year_date = datetime.strptime(laureate["year"], "%Y")
         born_date = datetime.strptime(laureate["born"], "%Y-%m-%d")
-        print("age", year_date.year - born_date.year)
+        print(f"age, {year_date.year} - {born_date.year}")
+        print("age: ",year_date.year - born_date.year)
         break
